@@ -1,0 +1,10 @@
+
+POST -> http://localhost:8080/api/user
+body -> raw and then select JSON
+{
+	"uname":"ssrikanth",
+	"fname":"Srikanth",
+	"lname":"Sriram",
+	"passwd":"ssriram",
+	"age":"23"
+}
