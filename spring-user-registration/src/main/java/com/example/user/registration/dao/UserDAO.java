@@ -13,7 +13,7 @@ public class UserDAO {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
-	private int id;
+	private long id;
 	
 	@Column(name="username")
 	private String uname;
@@ -30,11 +30,11 @@ public class UserDAO {
 	@Column(name="age")
 	private int age;
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -76,6 +76,12 @@ public class UserDAO {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Id:"+this.id+" Username:"+this.uname+" First Name:"+this.fname+" Last Name:"+this.lname+" Age:"+this.age;
 	}
 	
 	

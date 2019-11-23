@@ -7,6 +7,6 @@ import com.example.user.registration.dao.UserDAO;
 
 @Repository
 public interface UserJpaRepository extends JpaRepository<UserDAO, Long> {
-	//UserDAO findByName(String fname);
+	UserDAO findByuname(String uname);
 	//select u from UserDTO u, where u.name equals :name"
 }

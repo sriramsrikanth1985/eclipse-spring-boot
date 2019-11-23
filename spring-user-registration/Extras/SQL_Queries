@@ -12,3 +12,21 @@ CREATE TABLE `users` (
   UNIQUE KEY `id_UNIQUE` (`id`)
 ) ;
 
+========= 
+CREATE TABLE `usersNewFormat` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `email` varchar(45) NOT NULL,
+  `username` varchar(45),
+  `password` varchar(45),
+  `fname` varchar(45),
+  `lname` varchar(45),
+  `gender` ENUM('F','M'),
+  `age` TINYINT,
+  `phone` VARCHAR(20),
+  `address` varchar(100),
+  `pincode` bigint,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`email`)
+);
+======== 
+

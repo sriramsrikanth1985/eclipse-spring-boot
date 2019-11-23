@@ -8,3 +8,5 @@ body -> raw and then select JSON
 	"passwd":"ssriram",
 	"age":"23"
 }
+
+GET -> http://localhost:8080/api/user/ssrikanth
