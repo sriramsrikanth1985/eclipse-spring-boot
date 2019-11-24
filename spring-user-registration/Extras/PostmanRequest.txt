@@ -10,3 +10,18 @@ body -> raw and then select JSON
 }
 
 GET -> http://localhost:8080/api/user/ssrikanth
+=========== 
+http://localhost:8080/user-management/users
+
+{
+	"emailAddress": "srikanthatnitc@yahoo.co.in",
+	"username": "srikanthatnitc",
+	"password": "pass",
+    "firstname": "srikanth",
+    "lastname": "sriram",
+    "gender": "F",
+    "age": 35,
+	"phoneNum": "7204004545",
+	"address": "H.No:9-113, laxmi nagar, boduppal, hyderabad, telangana",
+	"pincode": "500092"
+}
