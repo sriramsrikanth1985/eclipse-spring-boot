@@ -15,7 +15,7 @@ public class SpringUserRegistrationApplication {
 	
 	@RequestMapping("/helloSri")
 	public String helloMethod(){
-		return "Helo World and Dear Sri !";
+		return "Helo World and Dear Sriram Srikanth !";
 	}
 
 }

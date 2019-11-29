@@ -159,5 +159,18 @@ public class UserDAO {
 				+" Gender:"+this.gender+" Phone:"+this.phoneNum+" Address:"+this.address+" Pincode:"+this.pincode;
 	}
 	
+	public void setDAO(UserDAO user){
+		this.id = user.getId();
+		this.emailAddress = user.getEmailAddress();
+		this.username = user.getUsername();
+		this.firstname = user.getFirstname();
+		this.lastname = user.getLastname();
+		this.age = user.getAge();
+		this.gender = user.getGender();
+		this.phoneNum = user.getPhoneNum();
+		this.address = user.getAddress();
+		this.pincode = user.getPincode();
+	}
+	
 	
 }

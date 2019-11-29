@@ -8,6 +8,7 @@ class SpringUserRegistrationApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }

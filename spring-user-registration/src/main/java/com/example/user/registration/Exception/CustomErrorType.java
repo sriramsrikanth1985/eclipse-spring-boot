@@ -13,5 +13,10 @@ public class CustomErrorType extends UserDAO {
 	public String getErrorMessage() {
 		return errorMessage;
 	}
+	
+	public CustomErrorType(UserDAO user, String message){
+		this.setDAO(user);
+		this.errorMessage = message;
+	}
 
 }

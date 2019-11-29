@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
+import com.example.user.registration.Exception.UserNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
@@ -32,6 +33,12 @@ public class RestValidationHandler {
 		this.messageSource = messageSource;
 		System.out.println("Inside RestValidationHandler constructor"+messageSource.toString());
 	}
+	
+    @ExceptionHandler({UserNotFoundException.class})
+//    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ResponseEntity<String> handleNotFoundException(UserNotFoundException e) {
+        return new ResponseEntity<String>(e.getMessage(), HttpStatus.NOT_FOUND);
+    }
 	
 	//method to handle validation error
 	@ExceptionHandler(MethodArgumentNotValidException.class)
